@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <title>Checklist PPS - Verificador de Informe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS externo -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
 <header>
   <div class="header-inner">
     <img src="assets/itba-logo.png" alt="Logo ITBA" class="header-logo">
@@ -16,18 +20,483 @@
     </div>
   </div>
 </header>
+
 <main>
   <div class="info-box">
     <strong>Cómo usar esta herramienta:</strong><br>
-    Marcá las partes que ya tiene tu informe final.
+    Marcá las partes que ya tiene tu informe final. Luego hacé clic en
+    <em>"Evaluar informe"</em>. Verás, punto por punto, si cumplís el mínimo requerido.
   </div>
-  <!-- Secciones deben añadirse aquí -->
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  SECCIÓN 1  ====================== -->
+  <!-- ===================================================== -->
+
+  <section class="section" data-section-id="1">
+    <div class="section-header">
+      <div class="section-title">1. Inclusión de portada</div>
+      <div class="section-meta">Mínimo requerido: 4 · Obligatorias: ninguna</div>
+    </div>
+
+    <ul class="options-list">
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s1o1" data-section="1" data-label="Membrete institucional (ITBA)">
+        <label for="s1o1">Membrete institucional (ITBA)</label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s1o2" data-section="1" data-label="Título del trabajo">
+        <label for="s1o2">Título del trabajo</label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s1o3" data-section="1" data-label="Nombre del alumno">
+        <label for="s1o3">Nombre del alumno</label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s1o4" data-section="1" data-label="Identificación de los tutores (académico e industrial)">
+        <label for="s1o4">Identificación de los tutores (académico e industrial)</label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s1o5" data-section="1" data-label="Lugar y fecha">
+        <label for="s1o5">Lugar y fecha</label>
+      </div></li>
+    </ul>
+
+    <div class="section-result" id="result-1"></div>
+  </section>
+
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  SECCIÓN 2  ====================== -->
+  <!-- ===================================================== -->
+
+  <section class="section" data-section-id="2">
+    <div class="section-header">
+      <div class="section-title">2. Resumen Ejecutivo</div>
+      <div class="section-meta">Mínimo requerido: 2 · Obligatorias: ninguna</div>
+    </div>
+
+    <ul class="options-list">
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s2o1" data-section="2" data-label="Síntesis concisa del problema">
+        <label for="s2o1">Síntesis concisa del problema</label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s2o2" data-section="2" data-label="Metodología">
+        <label for="s2o2">Metodología</label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s2o3" data-section="2" data-label="Resultados principales (KPIs) y recomendaciones">
+        <label for="s2o3">Resultados principales (KPIs) y recomendaciones</label>
+      </div></li>
+
+    </ul>
+
+    <div class="section-result" id="result-2"></div>
+  </section>
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  SECCIÓN 3  ====================== -->
+  <!-- ===================================================== -->
+
+  <section class="section" data-section-id="3">
+    <div class="section-header">
+      <div class="section-title">3. Índice</div>
+      <div class="section-meta">Mínimo requerido: 2 · Obligatoria: Índice general</div>
+    </div>
+
+    <ul class="options-list">
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s3o1" data-section="3" data-required="true"
+               data-label="Índice general de capítulos, secciones y subsecciones">
+        <label for="s3o1">Índice general de capítulos, secciones y subsecciones
+          <span class="required-pill">Obligatorio</span>
+        </label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s3o2" data-section="3" data-label="Glosario técnico">
+        <label for="s3o2">Glosario técnico</label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s3o3" data-section="3" data-label="Índice de tablas, índices de figuras y anexos">
+        <label for="s3o3">Índice de tablas, índices de figuras/gráficos y anexos</label>
+      </div></li>
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s3o4" data-section="3" data-label="Referencias bibliográficas y fuentes consultadas">
+        <label for="s3o4">Referencias bibliográficas y fuentes consultadas</label>
+      </div></li>
+
+    </ul>
+
+    <div class="section-result" id="result-3"></div>
+  </section>
+
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  SECCIÓN 4  ====================== -->
+  <!-- ===================================================== -->
+
+  <section class="section" data-section-id="4">
+    <div class="section-header">
+      <div class="section-title">4. Introducción</div>
+      <div class="section-meta">Mínimo requerido: 2 · Obligatoria: Presentación del informe</div>
+    </div>
+
+    <ul class="options-list">
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s4o1" data-section="4" data-required="true"
+               data-label="Presentación del informe">
+        <label for="s4o1">
+          Presentación del informe (¿Qué se hizo? ¿Cómo se hizo? ¿Para qué se hizo?)
+          <span class="required-pill">Obligatorio</span>
+        </label>
+      </div></li>
+
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s4o2" data-section="4" data-label="Delimitación del Alcance">
+          <label for="s4o2">Delimitación del Alcance</label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Área(s), sector(es), equipos de trabajo, funciones desempeñadas,
+          empresa y razón social, período temporal y abordaje técnico.
+        </div>
+      </li>
+
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s4o3" data-section="4" data-label="Mención de la estructura del documento">
+          <label for="s4o3">Mención de la estructura del documento</label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Breve síntesis para preparar al lector sobre el recorrido del informe.
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="section-result" id="result-4"></div>
+  </section>
+
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  SECCIÓN 5  ====================== -->
+  <!-- ===================================================== -->
+
+  <section class="section" data-section-id="5">
+    <div class="section-header">
+      <div class="section-title">5. Contextualización organizacional</div>
+      <div class="section-meta">Mínimo requerido: 3 · Obligatorias: Área PPS y Marco Normativo</div>
+    </div>
+
+    <ul class="options-list">
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s5o1" data-section="5" data-label="Perfil corporativo">
+        <label for="s5o1">Perfil corporativo</label>
+      </div></li>
+
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s5o2" data-section="5" data-label="Estructura organizacional">
+          <label for="s5o2">Estructura organizacional</label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Misión, visión, sector, productos principales, clientes, etc.
+        </div>
+      </li>
+
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s5o3" data-section="5" data-required="true"
+               data-label="Ubicación y funciones específicas del área donde se realizó la PPS">
+        <label for="s5o3">Ubicación y funciones específicas del área donde se realizó la PPS
+          <span class="required-pill">Obligatorio</span>
+        </label>
+      </div></li>
+
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s5o4" data-section="5" data-required="true"
+                 data-label="Marco Normativo y Protocolos Aplicados">
+          <label for="s5o4">Marco Normativo y Protocolos Aplicados
+            <span class="required-pill">Obligatorio</span>
+          </label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Normas, protocolos y regulaciones que rigieron la actividad (calidad, seguridad,
+          salud ocupacional, legal, etc.).
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="section-result" id="result-5"></div>
+  </section>
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  SECCIÓN 6  ====================== -->
+  <!-- ===================================================== -->
+
+  <section class="section" data-section-id="6">
+    <div class="section-header">
+      <div class="section-title">6. Primeros pasos de intervención ingenieril</div>
+      <div class="section-meta">Mínimo requerido: 2 · Obligatorias: Problema y KPIs</div>
+    </div>
+
+    <ul class="options-list">
+
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s6o1" data-section="6" data-required="true"
+                 data-label="Planteamiento del Problema y Diagnóstico">
+          <label for="s6o1">Planteamiento del Problema y Diagnóstico
+            <span class="required-pill">Obligatorio</span>
+          </label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Identificación precisa de la necesidad técnica u operacional que el proyecto aborda.
+        </div>
+      </li>
+
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s6o2" data-section="6" data-required="true"
+                 data-label="KPIs y Línea Base">
+          <label for="s6o2">KPIs y Línea Base
+            <span class="required-pill">Obligatorio</span>
+          </label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Definición de KPIs, fórmula, fuente de datos y valor inicial (línea base).
+          Incluir justificación si no se pueden formular KPIs.
+        </div>
+      </li>
+
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s6o3" data-section="6" data-label="Cronograma de actividades">
+          <label for="s6o3">Cronograma de actividades</label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Comparación entre actividades planificadas y ejecutadas.
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="section-result" id="result-6"></div>
+  </section>
+
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  SECCIÓN 7  ====================== -->
+  <!-- ===================================================== -->
+
+  <section class="section" data-section-id="7">
+    <div class="section-header">
+      <div class="section-title">7. Desarrollo, análisis técnico y evidencia tangible</div>
+      <div class="section-meta">Mínimo requerido: 4 · Obligatorias: 3</div>
+    </div>
+
+    <ul class="options-list">
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s7o1" data-section="7" data-required="true"
+               data-label="Exploración de alternativas / iteración">
+        <label for="s7o1">Exploración de alternativas / iteración
+          <span class="required-pill">Obligatorio</span>
+        </label>
+        <button class="toggle-details">ver más</button>
+      </div>
+      <div class="option-details">
+        Alternativas evaluadas y argumentación técnica de cada decisión.
+      </div>
+      </li>
+
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s7o2" data-section="7" data-required="true"
+               data-label="Metodología de Ejecución">
+        <label for="s7o2">Metodología de Ejecución
+          <span class="required-pill">Obligatorio</span>
+        </label>
+        <button class="toggle-details">ver más</button>
+      </div>
+      <div class="option-details">
+        Procedimientos utilizados, herramientas, parámetros técnicos y orden lógico.
+      </div>
+      </li>
+
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s7o3" data-section="7"
+               data-label="Presentación de Resultados y Matriz de Trazabilidad">
+        <label for="s7o3">Presentación de Resultados y Matriz de Trazabilidad</label>
+        <button class="toggle-details">ver más</button>
+      </div>
+      <div class="option-details">
+        Tablas, gráficos y matriz Objetivo–KPI–Evidencia vinculando planificación y resultados.
+      </div>
+      </li>
+
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s7o4" data-section="7"
+               data-label="Validación de KPIs y Análisis Comparativo">
+        <label for="s7o4">Validación de KPIs y Análisis Comparativo</label>
+        <button class="toggle-details">ver más</button>
+      </div>
+      <div class="option-details">
+        Discusión numérica, cuantificación de impacto y análisis de tendencias.
+      </div>
+      </li>
+
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s7o5" data-section="7" data-required="true"
+               data-label="Demostración de Expertise Disciplinaria (Evidencia específica)">
+        <label for="s7o5">Demostración de Expertise Disciplinaria (Evidencia específica)
+          <span class="required-pill">Obligatorio</span>
+        </label>
+        <button class="toggle-details">ver más</button>
+      </div>
+      <div class="option-details">
+        Cálculos, simulaciones, diseños, planos, modelos, código u otra evidencia técnica fuerte.
+      </div>
+      </li>
+
+    </ul>
+
+    <div class="section-result" id="result-7"></div>
+  </section>
+
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  SECCIÓN 8  ====================== -->
+  <!-- ===================================================== -->
+
+  <section class="section" data-section-id="8">
+    <div class="section-header">
+      <div class="section-title">8. Conclusiones: reflexión profesional y recomendaciones</div>
+      <div class="section-meta">Mínimo requerido: 2 · Obligatorias: 2</div>
+    </div>
+
+    <ul class="options-list">
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s8o1" data-section="8" data-required="true"
+                 data-label="Interpretación de los hallazgos">
+          <label for="s8o1">Interpretación de los hallazgos y causas subyacentes
+            <span class="required-pill">Obligatorio</span>
+          </label>
+        </div>
+      </li>
+
+
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s8o2" data-section="8" data-required="true"
+                 data-label="Uso de evidencia para justificar cumplimiento">
+          <label for="s8o2">Uso de evidencia para justificar el cumplimiento/no cumplimiento de objetivos
+            <span class="required-pill">Obligatorio</span>
+          </label>
+        </div>
+      </li>
+
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s8o3" data-section="8"
+               data-label="Reflexión crítica sobre teoría y habilidades">
+        <label for="s8o3">Reflexión crítica sobre teoría y habilidades</label>
+      </div></li>
+
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s8o4" data-section="8"
+               data-label="Identificación de limitaciones">
+        <label for="s8o4">Identificación de limitaciones y recomendaciones</label>
+      </div></li>
+
+
+      <li class="option-item"><div class="option-main">
+        <input type="checkbox" id="s8o5" data-section="8"
+               data-label="Implicancias a largo plazo">
+        <label for="s8o5">Implicancias a largo plazo para la empresa y el sector</label>
+      </div></li>
+
+    </ul>
+
+    <div class="section-result" id="result-8"></div>
+  </section>
+
+
+
+
+
+
+  <!-- ===================================================== -->
+  <!-- ===================  BOTÓN FINAL  ==================== -->
+  <!-- ===================================================== -->
+
   <div class="actions">
     <button class="btn-primary" id="evaluateBtn">Evaluar informe</button>
   </div>
+
   <div id="globalResult" class="global-result" style="display:none;"></div>
-  <footer>Verificador PPS · Centro de Recursos para el Conocimiento (ITBA)</footer>
+
+
+  <footer>
+    Verificador PPS · Centro de Recursos para el Conocimiento (ITBA)
+  </footer>
+
 </main>
+
+<!-- Script JS -->
 <script src="js/script.js"></script>
+
 </body>
 </html>
+
