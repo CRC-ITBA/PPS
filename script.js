@@ -1,1 +1,1 @@
-// placeholder JS
+/js/script.js
