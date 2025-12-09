@@ -24,9 +24,10 @@
 <main>
   <div class="info-box">
     <strong>Cómo usar esta herramienta:</strong><br>
-    Marcá las partes que ya tiene tu informe final. Luego hacé clic en
-    <em>"Evaluar informe"</em>. Verás, punto por punto, si cumplís el mínimo requerido.
+    Marcá todas las partes que ya tiene tu informe final.  
+    Luego hacé clic en <em>“Evaluar informe”</em> para ver si cumplís con los requisitos mínimos.
   </div>
+
 
 
 
@@ -57,7 +58,7 @@
       </div></li>
 
       <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s1o4" data-section="1" data-label="Identificación de los tutores (académico e industrial)">
+        <input type="checkbox" id="s1o4" data-section="1" data-label="Identificación de los tutores">
         <label for="s1o4">Identificación de los tutores (académico e industrial)</label>
       </div></li>
 
@@ -69,6 +70,7 @@
 
     <div class="section-result" id="result-1"></div>
   </section>
+
 
 
 
@@ -96,7 +98,7 @@
       </div></li>
 
       <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s2o3" data-section="2" data-label="Resultados principales (KPIs) y recomendaciones">
+        <input type="checkbox" id="s2o3" data-section="2" data-label="Resultados principales KPIs y recomendaciones">
         <label for="s2o3">Resultados principales (KPIs) y recomendaciones</label>
       </div></li>
 
@@ -104,6 +106,9 @@
 
     <div class="section-result" id="result-2"></div>
   </section>
+
+
+
 
 
 
@@ -133,8 +138,8 @@
       </div></li>
 
       <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s3o3" data-section="3" data-label="Índice de tablas, índices de figuras y anexos">
-        <label for="s3o3">Índice de tablas, índices de figuras/gráficos y anexos</label>
+        <input type="checkbox" id="s3o3" data-section="3" data-label="Índice de tablas y figuras">
+        <label for="s3o3">Índice de tablas, figuras y anexos</label>
       </div></li>
 
       <li class="option-item"><div class="option-main">
@@ -146,6 +151,8 @@
 
     <div class="section-result" id="result-3"></div>
   </section>
+
+
 
 
 
@@ -165,12 +172,10 @@
       <li class="option-item"><div class="option-main">
         <input type="checkbox" id="s4o1" data-section="4" data-required="true"
                data-label="Presentación del informe">
-        <label for="s4o1">
-          Presentación del informe (¿Qué se hizo? ¿Cómo se hizo? ¿Para qué se hizo?)
+        <label for="s4o1">Presentación del informe (qué, cómo y para qué)
           <span class="required-pill">Obligatorio</span>
         </label>
       </div></li>
-
 
       <li class="option-item">
         <div class="option-main">
@@ -179,11 +184,9 @@
           <button class="toggle-details">ver más</button>
         </div>
         <div class="option-details">
-          Área(s), sector(es), equipos de trabajo, funciones desempeñadas,
-          empresa y razón social, período temporal y abordaje técnico.
+          Área(s), sector(es), funciones, empresa, período temporal y abordaje técnico.
         </div>
       </li>
-
 
       <li class="option-item">
         <div class="option-main">
@@ -192,7 +195,7 @@
           <button class="toggle-details">ver más</button>
         </div>
         <div class="option-details">
-          Breve síntesis para preparar al lector sobre el recorrido del informe.
+          Breve ruta para guiar al lector por el contenido del informe.
         </div>
       </li>
 
@@ -204,6 +207,8 @@
 
 
 
+
+
   <!-- ===================================================== -->
   <!-- ===================  SECCIÓN 5  ====================== -->
   <!-- ===================================================== -->
@@ -211,16 +216,17 @@
   <section class="section" data-section-id="5">
     <div class="section-header">
       <div class="section-title">5. Contextualización organizacional</div>
-      <div class="section-meta">Mínimo requerido: 3 · Obligatorias: Área PPS y Marco Normativo</div>
+      <div class="section-meta">Mínimo requerido: 3 · Obligatorias: 2</div>
     </div>
 
     <ul class="options-list">
 
-      <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s5o1" data-section="5" data-label="Perfil corporativo">
-        <label for="s5o1">Perfil corporativo</label>
-      </div></li>
-
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s5o1" data-section="5" data-label="Perfil corporativo">
+          <label for="s5o1">Perfil corporativo</label>
+        </div>
+      </li>
 
       <li class="option-item">
         <div class="option-main">
@@ -229,19 +235,19 @@
           <button class="toggle-details">ver más</button>
         </div>
         <div class="option-details">
-          Misión, visión, sector, productos principales, clientes, etc.
+          Misión, visión, áreas, productos, clientes.
         </div>
       </li>
 
-
-      <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s5o3" data-section="5" data-required="true"
-               data-label="Ubicación y funciones específicas del área donde se realizó la PPS">
-        <label for="s5o3">Ubicación y funciones específicas del área donde se realizó la PPS
-          <span class="required-pill">Obligatorio</span>
-        </label>
-      </div></li>
-
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s5o3" data-section="5" data-required="true"
+                 data-label="Ubicación y funciones del área de PPS">
+          <label for="s5o3">Ubicación y funciones específicas del área donde se realizó la PPS
+            <span class="required-pill">Obligatorio</span>
+          </label>
+        </div>
+      </li>
 
       <li class="option-item">
         <div class="option-main">
@@ -253,8 +259,7 @@
           <button class="toggle-details">ver más</button>
         </div>
         <div class="option-details">
-          Normas, protocolos y regulaciones que rigieron la actividad (calidad, seguridad,
-          salud ocupacional, legal, etc.).
+          Regulaciones técnicas, normas de calidad, protocolos de seguridad o marco legal aplicable.
         </div>
       </li>
 
@@ -265,6 +270,9 @@
 
 
 
+
+
+
   <!-- ===================================================== -->
   <!-- ===================  SECCIÓN 6  ====================== -->
   <!-- ===================================================== -->
@@ -272,11 +280,10 @@
   <section class="section" data-section-id="6">
     <div class="section-header">
       <div class="section-title">6. Primeros pasos de intervención ingenieril</div>
-      <div class="section-meta">Mínimo requerido: 2 · Obligatorias: Problema y KPIs</div>
+      <div class="section-meta">Mínimo requerido: 2 · Obligatorias: 2</div>
     </div>
 
     <ul class="options-list">
-
 
       <li class="option-item">
         <div class="option-main">
@@ -288,10 +295,9 @@
           <button class="toggle-details">ver más</button>
         </div>
         <div class="option-details">
-          Identificación precisa de la necesidad técnica u operacional que el proyecto aborda.
+          Identificación precisa de la necesidad técnica u operacional abordada.
         </div>
       </li>
-
 
       <li class="option-item">
         <div class="option-main">
@@ -303,11 +309,9 @@
           <button class="toggle-details">ver más</button>
         </div>
         <div class="option-details">
-          Definición de KPIs, fórmula, fuente de datos y valor inicial (línea base).
-          Incluir justificación si no se pueden formular KPIs.
+          Indicadores clave, fórmula, fuente de datos y valor inicial del proceso.
         </div>
       </li>
-
 
       <li class="option-item">
         <div class="option-main">
@@ -316,7 +320,7 @@
           <button class="toggle-details">ver más</button>
         </div>
         <div class="option-details">
-          Comparación entre actividades planificadas y ejecutadas.
+          Comparación entre planificado y ejecutado.
         </div>
       </li>
 
@@ -324,6 +328,8 @@
 
     <div class="section-result" id="result-6"></div>
   </section>
+
+
 
 
 
@@ -340,69 +346,70 @@
 
     <ul class="options-list">
 
-      <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s7o1" data-section="7" data-required="true"
-               data-label="Exploración de alternativas / iteración">
-        <label for="s7o1">Exploración de alternativas / iteración
-          <span class="required-pill">Obligatorio</span>
-        </label>
-        <button class="toggle-details">ver más</button>
-      </div>
-      <div class="option-details">
-        Alternativas evaluadas y argumentación técnica de cada decisión.
-      </div>
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s7o1" data-section="7" data-required="true"
+                 data-label="Exploración de alternativas / iteración">
+          <label for="s7o1">Exploración de alternativas / iteración
+            <span class="required-pill">Obligatorio</span>
+          </label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Alternativas planteadas y justificación técnica.
+        </div>
       </li>
 
-
-      <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s7o2" data-section="7" data-required="true"
-               data-label="Metodología de Ejecución">
-        <label for="s7o2">Metodología de Ejecución
-          <span class="required-pill">Obligatorio</span>
-        </label>
-        <button class="toggle-details">ver más</button>
-      </div>
-      <div class="option-details">
-        Procedimientos utilizados, herramientas, parámetros técnicos y orden lógico.
-      </div>
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s7o2" data-section="7" data-required="true"
+                 data-label="Metodología de Ejecución">
+          <label for="s7o2">Metodología de Ejecución
+            <span class="required-pill">Obligatorio</span>
+          </label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Procedimientos, herramientas y secuencia del trabajo técnico realizado.
+        </div>
       </li>
 
-
-      <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s7o3" data-section="7"
-               data-label="Presentación de Resultados y Matriz de Trazabilidad">
-        <label for="s7o3">Presentación de Resultados y Matriz de Trazabilidad</label>
-        <button class="toggle-details">ver más</button>
-      </div>
-      <div class="option-details">
-        Tablas, gráficos y matriz Objetivo–KPI–Evidencia vinculando planificación y resultados.
-      </div>
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s7o3" data-section="7"
+                 data-label="Presentación de Resultados y Matriz de Trazabilidad">
+          <label for="s7o3">Presentación de Resultados y Matriz de Trazabilidad</label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Gráficos, tablas y matriz Objetivo–KPI–Evidencia.
+        </div>
       </li>
 
-
-      <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s7o4" data-section="7"
-               data-label="Validación de KPIs y Análisis Comparativo">
-        <label for="s7o4">Validación de KPIs y Análisis Comparativo</label>
-        <button class="toggle-details">ver más</button>
-      </div>
-      <div class="option-details">
-        Discusión numérica, cuantificación de impacto y análisis de tendencias.
-      </div>
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s7o4" data-section="7"
+                 data-label="Validación de KPIs y Análisis Comparativo">
+          <label for="s7o4">Validación de KPIs y Análisis Comparativo</label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Discusión de impacto, tendencias y coherencia numérica del proyecto.
+        </div>
       </li>
 
-
-      <li class="option-item"><div class="option-main">
-        <input type="checkbox" id="s7o5" data-section="7" data-required="true"
-               data-label="Demostración de Expertise Disciplinaria (Evidencia específica)">
-        <label for="s7o5">Demostración de Expertise Disciplinaria (Evidencia específica)
-          <span class="required-pill">Obligatorio</span>
-        </label>
-        <button class="toggle-details">ver más</button>
-      </div>
-      <div class="option-details">
-        Cálculos, simulaciones, diseños, planos, modelos, código u otra evidencia técnica fuerte.
-      </div>
+      <li class="option-item">
+        <div class="option-main">
+          <input type="checkbox" id="s7o5" data-section="7" data-required="true"
+                 data-label="Demostración de Expertise Disciplinaria">
+          <label for="s7o5">Demostración de Expertise Disciplinaria (Evidencia específica)
+            <span class="required-pill">Obligatorio</span>
+          </label>
+          <button class="toggle-details">ver más</button>
+        </div>
+        <div class="option-details">
+          Cálculos, simulaciones, diseños, planos, código u otra evidencia técnica.
+        </div>
       </li>
 
     </ul>
@@ -413,13 +420,15 @@
 
 
 
+
+
   <!-- ===================================================== -->
   <!-- ===================  SECCIÓN 8  ====================== -->
   <!-- ===================================================== -->
 
   <section class="section" data-section-id="8">
     <div class="section-header">
-      <div class="section-title">8. Conclusiones: reflexión profesional y recomendaciones</div>
+      <div class="section-title">8. Conclusiones y reflexión profesional</div>
       <div class="section-meta">Mínimo requerido: 2 · Obligatorias: 2</div>
     </div>
 
@@ -435,17 +444,15 @@
         </div>
       </li>
 
-
       <li class="option-item">
         <div class="option-main">
           <input type="checkbox" id="s8o2" data-section="8" data-required="true"
-                 data-label="Uso de evidencia para justificar cumplimiento">
-          <label for="s8o2">Uso de evidencia para justificar el cumplimiento/no cumplimiento de objetivos
+                 data-label="Uso de evidencia para justificar cumplimiento/no cumplimiento">
+          <label for="s8o2">Uso de evidencia para justificar cumplimiento/no cumplimiento de objetivos
             <span class="required-pill">Obligatorio</span>
           </label>
         </div>
       </li>
-
 
       <li class="option-item"><div class="option-main">
         <input type="checkbox" id="s8o3" data-section="8"
@@ -453,18 +460,16 @@
         <label for="s8o3">Reflexión crítica sobre teoría y habilidades</label>
       </div></li>
 
-
       <li class="option-item"><div class="option-main">
         <input type="checkbox" id="s8o4" data-section="8"
                data-label="Identificación de limitaciones">
         <label for="s8o4">Identificación de limitaciones y recomendaciones</label>
       </div></li>
 
-
       <li class="option-item"><div class="option-main">
         <input type="checkbox" id="s8o5" data-section="8"
                data-label="Implicancias a largo plazo">
-        <label for="s8o5">Implicancias a largo plazo para la empresa y el sector</label>
+        <label for="s8o5">Implicancias a largo plazo</label>
       </div></li>
 
     </ul>
@@ -494,10 +499,11 @@
 
 </main>
 
-<!-- Script JS -->
+<!-- JS externo -->
 <script src="js/script.js"></script>
 
 </body>
 </html>
+
 
 
