@@ -29,7 +29,7 @@ const minBySection = {
   5: 3,
   6: 2,
   7: 4,
-  8: 3
+  8: 3 // ✅ mínimo correcto
 };
 
 
@@ -45,7 +45,6 @@ function evaluateSection(id) {
   checkboxes.forEach(cb => {
     if (cb.checked) checkedCount++;
 
-    // Verificar obligatorios
     if (cb.dataset.required === "true" && !cb.checked) {
       missingRequired.push(cb.dataset.label);
     }
@@ -54,17 +53,13 @@ function evaluateSection(id) {
   const minRequired = minBySection[id];
   const resultEl = document.getElementById(`result-${id}`);
   let isOk = true;
-
-  // Construcción del mensaje
   let msg = "";
 
-  // Verificación de mínimo
   if (checkedCount < minRequired) {
     isOk = false;
     msg += `<div>Faltan ${minRequired - checkedCount} ítems para alcanzar el mínimo requerido (${minRequired}).</div>`;
   }
 
-  // Verificación de obligatorios
   if (missingRequired.length > 0) {
     isOk = false;
     msg += `<div>Faltan los siguientes ítems obligatorios:</div><ul>`;
@@ -74,7 +69,6 @@ function evaluateSection(id) {
     msg += `</ul>`;
   }
 
-  // Mostrar resultado
   if (isOk) {
     resultEl.className = "section-result ok";
     resultEl.textContent = "Este apartado cumple con los requisitos mínimos.";
@@ -94,26 +88,24 @@ function evaluateSection(id) {
 document.getElementById("evaluateBtn").addEventListener("click", () => {
   let allOk = true;
 
-  // Evaluar cada una de las 8 secciones
   for (let id = 1; id <= 8; id++) {
     const ok = evaluateSection(id);
     if (!ok) allOk = false;
   }
 
-  // Resultado global
   const global = document.getElementById("globalResult");
   global.style.display = "block";
 
   if (allOk) {
     global.className = "global-result global-ok";
-    global.textContent = "✔ "Tu informe cumple con los principales apartados que todo informe técnico debe contener. Asegúrate que su abordaje refleje el nivel de profesionalismo de un próximo graduado antes de enviarlo."
-.";
+    global.textContent =
+      "✔ Tu informe cumple con los principales apartados que todo informe técnico debe contener. Asegúrate que su abordaje refleje el nivel de profesionalismo de un próximo graduado antes de enviarlo.";
   } else {
     global.className = "global-result global-error";
-    global.textContent = "✖ "Tu informe no cumple con uno o más requisitos mínimos. Por ello te recomendamos, repasar la información en el campus (especialmente las recomendaciones y criterios de evaluación) antes de enviar tu informe."
-.";
+    global.textContent =
+      "✖ Tu informe no cumple con uno o más requisitos mínimos. Por ello te recomendamos, repasar la información en el campus (especialmente las recomendaciones y criterios de evaluación) antes de enviar tu informe.";
   }
 
-  // Scroll suave al resultado final
   global.scrollIntoView({ behavior: "smooth", block: "center" });
 });
+
