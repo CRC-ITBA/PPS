@@ -29,7 +29,7 @@ const minBySection = {
   5: 3,
   6: 2,
   7: 4,
-  8: 2
+  8: 3
 };
 
 
@@ -106,10 +106,12 @@ document.getElementById("evaluateBtn").addEventListener("click", () => {
 
   if (allOk) {
     global.className = "global-result global-ok";
-    global.textContent = "✔ Tu informe cumple con todos los requisitos mínimos por apartado.";
+    global.textContent = "✔ "Tu informe cumple con los principales apartados que todo informe técnico debe contener. Asegúrate que su abordaje refleje el nivel de profesionalismo de un próximo graduado antes de enviarlo."
+.";
   } else {
     global.className = "global-result global-error";
-    global.textContent = "✖ Tu informe no cumple con uno o más requisitos mínimos.";
+    global.textContent = "✖ "Tu informe no cumple con uno o más requisitos mínimos. Por ello te recomendamos, repasar la información en el campus (especialmente las recomendaciones y criterios de evaluación) antes de enviar tu informe."
+.";
   }
 
   // Scroll suave al resultado final
